@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .game-btn {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border: 8px solid black;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .green { background-color: green; }
+        .red { background-color: red; }
+        .yellow { background-color: yellow; }
+        .blue { background-color: blue; }
+        .active { opacity: 0.7; }
+        .redFlash{ background: red; }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 500px; 
+            margin: 0 auto; 
+        }
+        body{
+          background: #192841;
+        }
+        #message{
+          color: white;
+          font-weight: 800;
+         font-family: 'Courier New', monospace;
+        }
+        .btn-container{
+          padding-top: 20px;
+        }
+        #start-btn {
+            margin-top: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body id="doc-body">
+    <div class="container text-center">
+        <h1 id="message" class="mt-4">Press a key to start</h1>
+        <div class="btn-container">
+            <div class="game-btn green" id="green-btn"></div>
+            <div class="game-btn red" id="red-btn"></div>
+            <div class="game-btn yellow" id="yellow-btn"></div>
+            <div class="game-btn blue" id="blue-btn"></div>
+        </div>
+       
+   
+    </div>
+
+    <!-- Bootstrap JS, Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Your Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
